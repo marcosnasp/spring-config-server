@@ -1,1 +1,22 @@
-server:  port: ${port:8888}management:  server:    servlet:      context-path: /adminlogging:  level:    com.netflix.discovery: 'OFF'    org.springframework.cloud: 'DEBUG'spring:  cloud:    config:      server:        git:          uri: git@github.com:marcosnasp/spring-config-repo-example.git          clone-on-start: true          timeout: 10  security:    user:      name: root      password: s3cr3t
+server:
+  port: '${port:8888}'
+management:
+  server:
+    servlet:
+      context-path: /admin
+logging:
+  level:
+    com.netflix.discovery: OFF
+    org.springframework.cloud: DEBUG
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: 'git@github.com:marcosnasp/spring-config-repo-example.git'
+          clone-on-start: true
+          timeout: 10
+  security:
+    user:
+      name: root
+      password: s3cr3t
