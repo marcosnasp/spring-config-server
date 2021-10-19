@@ -13,7 +13,7 @@ spring:
     config:
       server:
         git:
-          uri: 'git@github.com:marcosnasp/spring-config-repo-example.git'
+          uri: 'https://github.com/marcosnasp/spring-config-repo-example'
           clone-on-start: true
           timeout: 10
   security:
